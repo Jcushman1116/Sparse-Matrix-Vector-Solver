@@ -28,8 +28,8 @@ z(i) = D(i) \cdot v(i) + \sum_{k=\text{rowptr}(i)}^{\text{rowptr}(i+1)-1} \text{
 $$
 
 **Task 1c — COO to Ellpack-Itpack** (`COO_to_ELL_Mv_mult`)
-Stores nonzero values in a dense n × Nd matrix COEF with associated column indices
-in JCOEF, where Nd is the maximum number of nonzeros in any row. Product computed as:
+Stores nonzero values in a dense $n$ × $N_d$ matrix COEF with associated column indices
+in JCOEF, where $N_d$ is the maximum number of nonzeros in any row. Product computed as:
 
 $$
 z(i) = \sum_{j=1}^{N_d} \text{COEF}(i,j) \cdot v(\text{JCOEF}(i,j))
